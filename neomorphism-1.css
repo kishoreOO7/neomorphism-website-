@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --shadow: -4px -4px 10px rgba(238,236,236),
+                3px 3px 5px rgba(89,89,89);
+    --bg-clr:rgb(208,206,206);
+    --icon-shadow: inset -2px -2px 5px rgba(238,236,236),
+                    inset 2px 2px 5px rgba(89,89,89);
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: var(--bg-clr);
+    font-family: Montserrat;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.container{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+header{
+    margin: 0 auto;
+    padding: 3em 2em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    font-size: 2rem;
+    padding: 0.5em 1em;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+nav a{
+    font-size: 1.4rem;
+}
+nav a+a{
+    margin-left: 2rem;
+}
+
+.nav-right a{
+    padding: 0.5em 1em;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+.nav-right a{
+    margin-left: 2rem;
+}
+
+.fa-paper-plane,
+.nav-right a:first-child{
+    color: darkblue;
+}
+
+.heading{
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.heading h1{
+    text-transform: capitalize;
+     font-size: 5rem;
+     font-weight: 300;
+}
+
+.heading p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #333;
+    margin: 3rem 0;
+}
+.heading span{
+    display: block;
+}
+
+.heading a{
+    display: inline-block;
+    padding: 0.5em 1em;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    transition: all 0.2s;
+}
+
+.heading a:hover{
+    transform: scale(0.95);
+}
+
+.details{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 1em;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    margin: 4rem auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.box h2, .box p{
+    color: #333;
+}
+
+.box h2{
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.box p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.box i{
+    font-size: 2rem;
+    padding: 0.8em;
+    border-radius: 50%;
+    box-shadow: var(--icon-shadow);
+}
+
+.flexbox{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 2em;
+}
+
+.image{
+    width: 50%;
+}
+.image img{
+    width: 80%;
+    border: 5px solid var(--bg-clr);
+    border-radius: 62% 38% 25% 75% / 31% 38% 62% 69%;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+.content{
+    width: 50%;
+}
+.content h2{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.content p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+.content .signature{
+    margin-top: 2rem;
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: 'Tangerine', cursive;
+    font-weight: 400;
+}
+
+.second{
+    margin-top: 10rem;
+    box-shadow: initial;
+}
+
+.second i{
+    box-shadow: -2px -2px 5px rgba(238,236,236),
+                    2px 2px 5px rgba(89,89,89);
+    transition: all 0.2s;
+}
+.second i:hover{
+    transform: scale(0.95);
+}
+
+.second h2{
+    font-weight: 400;
+}
+.second p{
+    font-weight: bold;
+}
+
+.last h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 10rem;
+}
+
+.cards{
+    box-shadow: initial;
+    margin-top: 1rem;
+}
+.cards img{
+    width: 40%;
+    border: 6px solid var(--bg-clr);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
+.cards .box{
+    padding: 2em 1em;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cards .box:hover{
+    box-shadow: var(--icon-shadow);
+    transform: scale(0.97);
+}
+.cards .icons i{
+    box-shadow: initial;
+}
+footer{
+    text-align: center;
+    font-size: 2rem;
+    color: darkblue;
+    margin: 1rem;
+}
+
+@media (max-width:710px){
+    header{
+        display: none;
+    }
+    .heading h1{
+        font-size: 4rem;
+    }
+    .details{
+        display: block;
+        box-shadow: initial;
+    }
+    .box{
+        margin: 4rem 0;
+    }
+    .flexbox{
+        display: block;
+    }
+    .image{
+        width: 100%;
+        padding-left: 40px;
+    }
+    .content{
+        margin-top: 10rem;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
